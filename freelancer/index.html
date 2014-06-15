@@ -197,7 +197,38 @@ type="application/x-shockwave-flash">
                             <div class="form-group col-xs-12">
                                 <button type="submit" class="btn btn-lg btn-success">Send</button>
                             </div>
-                            
+                            <script type="text/template" id="bury-it-template">
+<div class="bury-it">
+        <form class="bury-it-form" name="bury-it-form">
+          <h2 id="bury-title">bury a thought</h2>
+          <ul>
+          <li>
+            <input type="text" id="email" placeholder="email" class="text-field" /> 
+          </li>
+          <li id="phone-number-li">
+            <span>(</span>
+            <input type="text" id="area-code" class="text-field" placeholder="###" maxlength="3" />
+            <span>)</span>
+            <input type="text" id="prefix" class="text-field" placeholder="###" maxlength="3" />
+            <span>-</span>
+            <input type="text" id="suffix" class="text-field" placeholder="####" maxlength="4" /> 
+          </li>
+          <li>
+            <input type="textarea" id="thought-to-bury"  class="text-field" placeholder="leave a thought here you want to bury..." value="" />
+          </li>
+          <div class="inline-block"><input type="radio" id="soon" class="radio-button" value="soon" checked="checked" name="timeframe"><label style="padding-right:10px;" for="soon" onClick="console.log('soon clicked');$('.confirmation').html('<p>your thought will unearth during the next 24 hours</p>').show();$('#confirmation').css('color','#666666');">soon</label>
+          <input type="radio" id="later" class="radio-button" value="later" name="timeframe"><label style="padding-right:10px;" for="later" onClick="console.log('later clicked');$('.confirmation').html('<p>your thought will unearth during the next 2-7 days</p>').show();$('#confirmation').css('color','#666666');">later</label></div>
+          <div class="inline-block" id="bottom-buttons"><input type="radio" id="someday" class="radio-button" value="someday" name="timeframe"><label style="padding-right:10px;" for="someday" onClick="console.log('someday clicked');$('.confirmation').html('<p>your thought will unearth during the next 1-4 weeks</p>').show();$('#confirmation').css('color','#666666');"> someday</label>
+          <input type="radio" id="forgotten" value="forgotten" class="radio-button" name="timeframe"><label for="forgotten" onClick="console.log('forgotten clicked');$('.confirmation').html('<p>your thought will unearth during the next 1-3 months</p>').show();$('#confirmation').css('color','#666666');">forgotten</label></div>
+          </li>
+          <li id="bury-it-button-li">
+          <button class="bury-it-button">bury it</button>
+          </li>
+          </ul>
+        </form>
+</div>
+</script>
+
                         </div>
                     </form>
                 </div>
