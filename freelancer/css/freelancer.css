@@ -8,10 +8,15 @@ p {
 
 #Random{
 	background: #18bc9c;
+	text-align: center;
 }
 
 #Private{
 	background: #18bc9c;
+	text-align: center;
+}
+#Sentimental{
+	text-align: center;
 }
 
 p.small {
