@@ -168,7 +168,7 @@ section.success {
     -moz-transition: all ease .5s;
 }
 
-#Ranom .Random-item .Random-link .caption:hover {
+#Random .Random-item .Random-link .caption:hover {
     opacity: 1;
 }
 
