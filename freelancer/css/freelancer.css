@@ -6,6 +6,14 @@ p {
     font-size: 20px;
 }
 
+#Random{
+	background: #18bc9c;
+}
+
+#Private{
+	background: #18bc9c;
+}
+
 p.small {
     font-size: 16px;
 }
@@ -64,8 +72,7 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    background: #18bc9c;
-    color: #fff;
+    color: #18bc9c;
 }
 
 header .container {
